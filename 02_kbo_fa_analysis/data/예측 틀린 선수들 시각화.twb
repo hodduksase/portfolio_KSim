@@ -1,0 +1,1534 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20252.25.0514.2217                               -->
+<workbook original-version='18.1' source-build='2025.2.0 (20252.25.0514.2217)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AccessibleZoneTabOrder />
+    <AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelExtractV2 />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <SortTagCleanup />
+    <_.fcp.VConnDownstreamExtractsWithWarnings.true...VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='투수연봉예측_실패칼럼_0813' inline='true' name='federated.0tsu3531p246e01flsfxo0liwh78' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='투수연봉예측_실패칼럼_0813' name='textscan.130rz8t0kqpgcl14r8oii1ja0buk'>
+            <connection class='textscan' directory='C:/Users/wanna/OneDrive/Desktop/workspace/12_데이터톤' filename='투수연봉예측_실패칼럼_0813.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.130rz8t0kqpgcl14r8oii1ja0buk' name='투수연봉예측_실패칼럼_0813.csv' table='[투수연봉예측_실패칼럼_0813#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='ko_KR' separator=','>
+            <column datatype='string' name='선수' ordinal='0' />
+            <column datatype='string' name='팀' ordinal='1' />
+            <column datatype='integer' name='pid' ordinal='2' />
+            <column datatype='string' name='true' ordinal='3' />
+            <column datatype='string' name='pred' ordinal='4' />
+            <column datatype='integer' name='연봉총(만원)' ordinal='5' />
+            <column datatype='integer' name='등급차' ordinal='6' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[투수연봉예측_실패칼럼_0813.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;ko&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;₩&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;ko_KR&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>선수</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[선수]</local-name>
+            <parent-name>[투수연봉예측_실패칼럼_0813.csv]</parent-name>
+            <remote-alias>선수</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LKO_RKR' />
+            <object-id>[투수연봉예측_실패칼럼_0813.csv_40F5DE16FF4748D6BC61283ECD38708B]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>팀</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[팀]</local-name>
+            <parent-name>[투수연봉예측_실패칼럼_0813.csv]</parent-name>
+            <remote-alias>팀</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LKO_RKR' />
+            <object-id>[투수연봉예측_실패칼럼_0813.csv_40F5DE16FF4748D6BC61283ECD38708B]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>pid</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[pid]</local-name>
+            <parent-name>[투수연봉예측_실패칼럼_0813.csv]</parent-name>
+            <remote-alias>pid</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[투수연봉예측_실패칼럼_0813.csv_40F5DE16FF4748D6BC61283ECD38708B]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>true</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[true]</local-name>
+            <parent-name>[투수연봉예측_실패칼럼_0813.csv]</parent-name>
+            <remote-alias>true</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LKO_RKR' />
+            <object-id>[투수연봉예측_실패칼럼_0813.csv_40F5DE16FF4748D6BC61283ECD38708B]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>pred</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[pred]</local-name>
+            <parent-name>[투수연봉예측_실패칼럼_0813.csv]</parent-name>
+            <remote-alias>pred</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LKO_RKR' />
+            <object-id>[투수연봉예측_실패칼럼_0813.csv_40F5DE16FF4748D6BC61283ECD38708B]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>연봉총(만원)</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[연봉총(만원)]</local-name>
+            <parent-name>[투수연봉예측_실패칼럼_0813.csv]</parent-name>
+            <remote-alias>연봉총(만원)</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[투수연봉예측_실패칼럼_0813.csv_40F5DE16FF4748D6BC61283ECD38708B]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>등급차</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[등급차]</local-name>
+            <parent-name>[투수연봉예측_실패칼럼_0813.csv]</parent-name>
+            <remote-alias>등급차</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[투수연봉예측_실패칼럼_0813.csv_40F5DE16FF4748D6BC61283ECD38708B]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='행비율' datatype='real' name='[Calculation_1340665356268384256]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='COUNTD([pid]) / WINDOW_SUM(COUNTD([pid]))'>
+          <table-calc ordering-type='Rows' />
+        </calculation>
+      </column>
+      <column caption='오분류 비용' datatype='integer' name='[Calculation_1340665356269465603]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='SUM([연봉총(만원)] * [등급차])' />
+      </column>
+      <column caption='오분류여부' datatype='integer' name='[Calculation_1340665356269961220]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='IIF([true] = [pred], 0, 1)' />
+      </column>
+      <column caption='오분류비용(만원)' datatype='integer' name='[Calculation_1340665356270022661]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='IIF([등급차] &gt; 0, [연봉총(만원)] * [등급차], 0)' />
+      </column>
+      <column caption='TrueOrder' datatype='integer' name='[Calculation_1686316627418873856]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='CASE [true]&#13;&#10;WHEN &apos;A&apos; THEN 3 WHEN &apos;B&apos; THEN 2 WHEN &apos;C&apos; THEN 1 ELSE 0 END' />
+      </column>
+      <column caption='PredOrder' datatype='integer' name='[Calculation_1686316627418931201]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='CASE [pred]&#13;&#10;WHEN &apos;A&apos; THEN 3 WHEN &apos;B&apos; THEN 2 WHEN &apos;C&apos; THEN 1 ELSE 0 END' />
+      </column>
+      <column caption='오차방향' datatype='string' name='[Calculation_1686316627418959874]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='IF [Calculation_1686316627418931201] - [Calculation_1686316627418873856] &gt; 0 THEN &apos;높게예측&apos;&#13;&#10;ELSEIF [Calculation_1686316627418931201] - [Calculation_1686316627418873856] &lt; 0 THEN &apos;낮게예측&apos;&#13;&#10;ELSE &apos;동일&apos; END' />
+      </column>
+      <column caption='실제→예측' datatype='string' name='[Calculation_1686316627419013123]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='STR([true]) + &apos;→&apos; + STR([pred])' />
+      </column>
+      <column caption='큰오차' datatype='integer' name='[Calculation_1686316627419066372]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='IF [등급차] &gt;= 2 THEN 1 ELSE 0 END' />
+      </column>
+      <column caption='투수연봉예측_실패칼럼_0813.csv' datatype='table' name='[__tableau_internal_object_id__].[투수연봉예측_실패칼럼_0813.csv_40F5DE16FF4748D6BC61283ECD38708B]' role='measure' type='quantitative' />
+      <column caption='Pid' datatype='integer' name='[pid]' role='dimension' type='ordinal' />
+      <column caption='Pred' datatype='string' name='[pred]' role='dimension' type='nominal' />
+      <column caption='True' datatype='string' name='[true]' role='dimension' type='nominal' />
+      <column-instance column='[Calculation_1686316627418959874]' derivation='None' name='[none:Calculation_1686316627418959874:nk]' pivot='key' type='nominal' />
+      <column-instance column='[pred]' derivation='None' name='[none:pred:nk]' pivot='key' type='nominal' />
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' author-locale='ko_KR' class='hyper' dbname='C:/Users/wanna/AppData/Local/Temp/TableauTemp/#TableauTemp_12kiywt08vhqzo14tpmqp0vimw1y.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='08/13/2025 07:41:10 AM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>선수</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[선수]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>선수</remote-alias>
+              <ordinal>0</ordinal>
+              <family>투수연봉예측_실패칼럼_0813.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>93</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LKO_RKR' />
+              <object-id>[투수연봉예측_실패칼럼_0813.csv_40F5DE16FF4748D6BC61283ECD38708B]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>팀</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[팀]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>팀</remote-alias>
+              <ordinal>1</ordinal>
+              <family>투수연봉예측_실패칼럼_0813.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>10</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LKO_RKR' />
+              <object-id>[투수연봉예측_실패칼럼_0813.csv_40F5DE16FF4748D6BC61283ECD38708B]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>pid</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[pid]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>pid</remote-alias>
+              <ordinal>2</ordinal>
+              <family>투수연봉예측_실패칼럼_0813.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>93</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[투수연봉예측_실패칼럼_0813.csv_40F5DE16FF4748D6BC61283ECD38708B]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>true</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[true]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>true</remote-alias>
+              <ordinal>3</ordinal>
+              <family>투수연봉예측_실패칼럼_0813.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LKO_RKR' />
+              <object-id>[투수연봉예측_실패칼럼_0813.csv_40F5DE16FF4748D6BC61283ECD38708B]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>pred</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[pred]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>pred</remote-alias>
+              <ordinal>4</ordinal>
+              <family>투수연봉예측_실패칼럼_0813.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LKO_RKR' />
+              <object-id>[투수연봉예측_실패칼럼_0813.csv_40F5DE16FF4748D6BC61283ECD38708B]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>연봉총(만원)</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[연봉총(만원)]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>연봉총(만원)</remote-alias>
+              <ordinal>5</ordinal>
+              <family>투수연봉예측_실패칼럼_0813.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>57</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[투수연봉예측_실패칼럼_0813.csv_40F5DE16FF4748D6BC61283ECD38708B]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>등급차</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[등급차]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>등급차</remote-alias>
+              <ordinal>6</ordinal>
+              <family>투수연봉예측_실패칼럼_0813.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[투수연봉예측_실패칼럼_0813.csv_40F5DE16FF4748D6BC61283ECD38708B]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:Calculation_1686316627418959874:nk]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;높게예측&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;낮게예측&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:pred:nk]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;D&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;C&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;A&quot;</bucket>
+            </map>
+            <map to='#edc948'>
+              <bucket>&quot;B&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;대한민국&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='투수연봉예측_실패칼럼_0813.csv' id='투수연봉예측_실패칼럼_0813.csv_40F5DE16FF4748D6BC61283ECD38708B'>
+            <properties context=''>
+              <relation connection='textscan.130rz8t0kqpgcl14r8oii1ja0buk' name='투수연봉예측_실패칼럼_0813.csv' table='[투수연봉예측_실패칼럼_0813#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='ko_KR' separator=','>
+                  <column datatype='string' name='선수' ordinal='0' />
+                  <column datatype='string' name='팀' ordinal='1' />
+                  <column datatype='integer' name='pid' ordinal='2' />
+                  <column datatype='string' name='true' ordinal='3' />
+                  <column datatype='string' name='pred' ordinal='4' />
+                  <column datatype='integer' name='연봉총(만원)' ordinal='5' />
+                  <column datatype='integer' name='등급차' ordinal='6' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='[시트 2]오분류 흐름(실제→예측)'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='투수연봉예측_실패칼럼_0813' name='federated.0tsu3531p246e01flsfxo0liwh78' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0tsu3531p246e01flsfxo0liwh78'>
+            <column caption='TrueOrder' datatype='integer' name='[Calculation_1686316627418873856]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='CASE [true]&#13;&#10;WHEN &apos;A&apos; THEN 3 WHEN &apos;B&apos; THEN 2 WHEN &apos;C&apos; THEN 1 ELSE 0 END' />
+            </column>
+            <column caption='PredOrder' datatype='integer' name='[Calculation_1686316627418931201]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='CASE [pred]&#13;&#10;WHEN &apos;A&apos; THEN 3 WHEN &apos;B&apos; THEN 2 WHEN &apos;C&apos; THEN 1 ELSE 0 END' />
+            </column>
+            <column caption='오차방향' datatype='string' name='[Calculation_1686316627418959874]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='IF [Calculation_1686316627418931201] - [Calculation_1686316627418873856] &gt; 0 THEN &apos;높게예측&apos;&#13;&#10;ELSEIF [Calculation_1686316627418931201] - [Calculation_1686316627418873856] &lt; 0 THEN &apos;낮게예측&apos;&#13;&#10;ELSE &apos;동일&apos; END' />
+            </column>
+            <column caption='실제→예측' datatype='string' name='[Calculation_1686316627419013123]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='STR([true]) + &apos;→&apos; + STR([pred])' />
+            </column>
+            <column-instance column='[pid]' derivation='Count' name='[cnt:pid:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_1686316627418959874]' derivation='None' name='[none:Calculation_1686316627418959874:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_1686316627419013123]' derivation='None' name='[none:Calculation_1686316627419013123:nk]' pivot='key' type='nominal' />
+            <column caption='Pid' datatype='integer' name='[pid]' role='dimension' type='ordinal' />
+            <column caption='Pred' datatype='string' name='[pred]' role='dimension' type='nominal' />
+            <column caption='True' datatype='string' name='[true]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.0tsu3531p246e01flsfxo0liwh78].[cnt:pid:qk]' scope='cols' value='선수 수' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <color column='[federated.0tsu3531p246e01flsfxo0liwh78].[none:Calculation_1686316627418959874:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0tsu3531p246e01flsfxo0liwh78].[none:Calculation_1686316627419013123:nk]</rows>
+        <cols>[federated.0tsu3531p246e01flsfxo0liwh78].[cnt:pid:qk]</cols>
+      </table>
+      <simple-id uuid='{88E919B6-EDCE-49F3-A882-53F77DA97434}' />
+    </worksheet>
+    <worksheet name='[시트 3]팀 × 예측등급 히트맵'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='투수연봉예측_실패칼럼_0813' name='federated.0tsu3531p246e01flsfxo0liwh78' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0tsu3531p246e01flsfxo0liwh78'>
+            <column-instance column='[pid]' derivation='Count' name='[cnt:pid:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[pred]' derivation='None' name='[none:pred:nk]' pivot='key' type='nominal' />
+            <column-instance column='[팀]' derivation='None' name='[none:팀:nk]' pivot='key' type='nominal' />
+            <column caption='Pid' datatype='integer' name='[pid]' role='dimension' type='ordinal' />
+            <column caption='Pred' datatype='string' name='[pred]' role='dimension' type='nominal' />
+            <column datatype='string' name='[팀]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.0tsu3531p246e01flsfxo0liwh78].[cnt:pid:qk]' type='custom-interpolated'>
+              <color-palette custom='true' name='' type='ordered-sequential'>
+                <color>#f1f1f1</color>
+                <color>#dde3e9</color>
+                <color>#cad5e2</color>
+                <color>#b7c8da</color>
+                <color>#a6bcd3</color>
+                <color>#95afcc</color>
+                <color>#85a4c4</color>
+                <color>#7698bd</color>
+                <color>#688db5</color>
+                <color>#5a83ae</color>
+                <color>#4e79a7</color>
+              </color-palette>
+            </encoding>
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Square' />
+            <encodings>
+              <color column='[federated.0tsu3531p246e01flsfxo0liwh78].[cnt:pid:qk]' />
+              <text column='[federated.0tsu3531p246e01flsfxo0liwh78].[cnt:pid:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0tsu3531p246e01flsfxo0liwh78].[none:팀:nk]</rows>
+        <cols>[federated.0tsu3531p246e01flsfxo0liwh78].[none:pred:nk]</cols>
+      </table>
+      <simple-id uuid='{263338E7-A5F0-4723-B438-348C502F0A58}' />
+    </worksheet>
+    <worksheet name='[시트 4]실제×예측 히트맵'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='투수연봉예측_실패칼럼_0813' name='federated.0tsu3531p246e01flsfxo0liwh78' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0tsu3531p246e01flsfxo0liwh78'>
+            <column-instance column='[pid]' derivation='Count' name='[cnt:pid:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[pred]' derivation='None' name='[none:pred:nk]' pivot='key' type='nominal' />
+            <column-instance column='[true]' derivation='None' name='[none:true:nk]' pivot='key' type='nominal' />
+            <column caption='Pid' datatype='integer' name='[pid]' role='dimension' type='ordinal' />
+            <column caption='Pred' datatype='string' name='[pred]' role='dimension' type='nominal' />
+            <column caption='True' datatype='string' name='[true]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Square' />
+            <encodings>
+              <text column='[federated.0tsu3531p246e01flsfxo0liwh78].[cnt:pid:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0tsu3531p246e01flsfxo0liwh78].[none:true:nk]</rows>
+        <cols>[federated.0tsu3531p246e01flsfxo0liwh78].[none:pred:nk]</cols>
+      </table>
+      <simple-id uuid='{C65191E3-4245-4A81-A9D8-B60AD7E67859}' />
+    </worksheet>
+    <worksheet name='[시트 5]오분류 비용'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='투수연봉예측_실패칼럼_0813' name='federated.0tsu3531p246e01flsfxo0liwh78' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0tsu3531p246e01flsfxo0liwh78'>
+            <column caption='오분류비용(만원)' datatype='integer' name='[Calculation_1340665356270022661]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='IIF([등급차] &gt; 0, [연봉총(만원)] * [등급차], 0)' />
+            </column>
+            <column caption='TrueOrder' datatype='integer' name='[Calculation_1686316627418873856]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='CASE [true]&#13;&#10;WHEN &apos;A&apos; THEN 3 WHEN &apos;B&apos; THEN 2 WHEN &apos;C&apos; THEN 1 ELSE 0 END' />
+            </column>
+            <column caption='PredOrder' datatype='integer' name='[Calculation_1686316627418931201]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='CASE [pred]&#13;&#10;WHEN &apos;A&apos; THEN 3 WHEN &apos;B&apos; THEN 2 WHEN &apos;C&apos; THEN 1 ELSE 0 END' />
+            </column>
+            <column caption='오차방향' datatype='string' name='[Calculation_1686316627418959874]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='IF [Calculation_1686316627418931201] - [Calculation_1686316627418873856] &gt; 0 THEN &apos;높게예측&apos;&#13;&#10;ELSEIF [Calculation_1686316627418931201] - [Calculation_1686316627418873856] &lt; 0 THEN &apos;낮게예측&apos;&#13;&#10;ELSE &apos;동일&apos; END' />
+            </column>
+            <column-instance column='[Calculation_1686316627418959874]' derivation='None' name='[none:Calculation_1686316627418959874:nk]' pivot='key' type='nominal' />
+            <column-instance column='[팀]' derivation='None' name='[none:팀:nk]' pivot='key' type='nominal' />
+            <column caption='Pred' datatype='string' name='[pred]' role='dimension' type='nominal' />
+            <column-instance column='[Calculation_1340665356270022661]' derivation='Sum' name='[sum:Calculation_1340665356270022661:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[연봉총(만원)]' derivation='Sum' name='[sum:연봉총(만원):qk]' pivot='key' type='quantitative' />
+            <column caption='True' datatype='string' name='[true]' role='dimension' type='nominal' />
+            <column datatype='integer' name='[등급차]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[연봉총(만원)]' role='measure' type='quantitative' />
+            <column datatype='string' name='[팀]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <computed-sort column='[federated.0tsu3531p246e01flsfxo0liwh78].[none:팀:nk]' direction='DESC' using='[federated.0tsu3531p246e01flsfxo0liwh78].[sum:Calculation_1340665356270022661:qk]' />
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='width' value='413' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <color column='[federated.0tsu3531p246e01flsfxo0liwh78].[none:Calculation_1686316627418959874:nk]' />
+              <text column='[federated.0tsu3531p246e01flsfxo0liwh78].[sum:연봉총(만원):qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0tsu3531p246e01flsfxo0liwh78].[none:팀:nk]</rows>
+        <cols>[federated.0tsu3531p246e01flsfxo0liwh78].[sum:Calculation_1340665356270022661:qk]</cols>
+      </table>
+      <simple-id uuid='{CEBAC116-535F-4267-920A-7C39C7A3B552}' />
+    </worksheet>
+    <worksheet name='[시트 6]연봉 vs 등급차 산점도'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='투수연봉예측_실패칼럼_0813' name='federated.0tsu3531p246e01flsfxo0liwh78' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0tsu3531p246e01flsfxo0liwh78'>
+            <column caption='TrueOrder' datatype='integer' name='[Calculation_1686316627418873856]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='CASE [true]&#13;&#10;WHEN &apos;A&apos; THEN 3 WHEN &apos;B&apos; THEN 2 WHEN &apos;C&apos; THEN 1 ELSE 0 END' />
+            </column>
+            <column caption='PredOrder' datatype='integer' name='[Calculation_1686316627418931201]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='CASE [pred]&#13;&#10;WHEN &apos;A&apos; THEN 3 WHEN &apos;B&apos; THEN 2 WHEN &apos;C&apos; THEN 1 ELSE 0 END' />
+            </column>
+            <column caption='오차방향' datatype='string' name='[Calculation_1686316627418959874]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='IF [Calculation_1686316627418931201] - [Calculation_1686316627418873856] &gt; 0 THEN &apos;높게예측&apos;&#13;&#10;ELSEIF [Calculation_1686316627418931201] - [Calculation_1686316627418873856] &lt; 0 THEN &apos;낮게예측&apos;&#13;&#10;ELSE &apos;동일&apos; END' />
+            </column>
+            <column-instance column='[Calculation_1686316627418959874]' derivation='None' name='[none:Calculation_1686316627418959874:nk]' pivot='key' type='nominal' />
+            <column-instance column='[pred]' derivation='None' name='[none:pred:nk]' pivot='key' type='nominal' />
+            <column-instance column='[true]' derivation='None' name='[none:true:nk]' pivot='key' type='nominal' />
+            <column-instance column='[선수]' derivation='None' name='[none:선수:nk]' pivot='key' type='nominal' />
+            <column-instance column='[팀]' derivation='None' name='[none:팀:nk]' pivot='key' type='nominal' />
+            <column caption='Pred' datatype='string' name='[pred]' role='dimension' type='nominal' />
+            <column-instance column='[등급차]' derivation='Sum' name='[sum:등급차:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[연봉총(만원)]' derivation='Sum' name='[sum:연봉총(만원):qk]' pivot='key' type='quantitative' />
+            <column caption='True' datatype='string' name='[true]' role='dimension' type='nominal' />
+            <column datatype='integer' name='[등급차]' role='measure' type='quantitative' />
+            <column datatype='string' name='[선수]' role='dimension' type='nominal' />
+            <column datatype='integer' name='[연봉총(만원)]' role='measure' type='quantitative' />
+            <column datatype='string' name='[팀]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <encodings>
+              <color column='[federated.0tsu3531p246e01flsfxo0liwh78].[none:Calculation_1686316627418959874:nk]' />
+              <lod column='[federated.0tsu3531p246e01flsfxo0liwh78].[none:선수:nk]' />
+              <lod column='[federated.0tsu3531p246e01flsfxo0liwh78].[none:팀:nk]' />
+              <lod column='[federated.0tsu3531p246e01flsfxo0liwh78].[none:true:nk]' />
+              <lod column='[federated.0tsu3531p246e01flsfxo0liwh78].[none:pred:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0tsu3531p246e01flsfxo0liwh78].[sum:등급차:qk]</rows>
+        <cols>[federated.0tsu3531p246e01flsfxo0liwh78].[sum:연봉총(만원):qk]</cols>
+      </table>
+      <simple-id uuid='{AACF6407-9916-445C-AFE2-0D6A01D45D48}' />
+    </worksheet>
+    <worksheet name='[시트 7]팀별 큰오차 &gt;=2'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='투수연봉예측_실패칼럼_0813' name='federated.0tsu3531p246e01flsfxo0liwh78' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0tsu3531p246e01flsfxo0liwh78'>
+            <column caption='TrueOrder' datatype='integer' name='[Calculation_1686316627418873856]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='CASE [true]&#13;&#10;WHEN &apos;A&apos; THEN 3 WHEN &apos;B&apos; THEN 2 WHEN &apos;C&apos; THEN 1 ELSE 0 END' />
+            </column>
+            <column caption='PredOrder' datatype='integer' name='[Calculation_1686316627418931201]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='CASE [pred]&#13;&#10;WHEN &apos;A&apos; THEN 3 WHEN &apos;B&apos; THEN 2 WHEN &apos;C&apos; THEN 1 ELSE 0 END' />
+            </column>
+            <column caption='오차방향' datatype='string' name='[Calculation_1686316627418959874]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='IF [Calculation_1686316627418931201] - [Calculation_1686316627418873856] &gt; 0 THEN &apos;높게예측&apos;&#13;&#10;ELSEIF [Calculation_1686316627418931201] - [Calculation_1686316627418873856] &lt; 0 THEN &apos;낮게예측&apos;&#13;&#10;ELSE &apos;동일&apos; END' />
+            </column>
+            <column-instance column='[pid]' derivation='Count' name='[cnt:pid:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_1686316627418959874]' derivation='None' name='[none:Calculation_1686316627418959874:nk]' pivot='key' type='nominal' />
+            <column-instance column='[등급차]' derivation='None' name='[none:등급차:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[팀]' derivation='None' name='[none:팀:nk]' pivot='key' type='nominal' />
+            <column caption='Pid' datatype='integer' name='[pid]' role='dimension' type='ordinal' />
+            <column caption='Pred' datatype='string' name='[pred]' role='dimension' type='nominal' />
+            <column caption='True' datatype='string' name='[true]' role='dimension' type='nominal' />
+            <column datatype='integer' name='[등급차]' role='measure' type='quantitative' />
+            <column datatype='string' name='[팀]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <filter class='quantitative' column='[federated.0tsu3531p246e01flsfxo0liwh78].[none:등급차:qk]' included-values='in-range'>
+            <min>2</min>
+          </filter>
+          <computed-sort column='[federated.0tsu3531p246e01flsfxo0liwh78].[none:팀:nk]' direction='DESC' using='[federated.0tsu3531p246e01flsfxo0liwh78].[cnt:pid:qk]' />
+          <slices>
+            <column>[federated.0tsu3531p246e01flsfxo0liwh78].[none:등급차:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0tsu3531p246e01flsfxo0liwh78].[none:Calculation_1686316627418959874:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0tsu3531p246e01flsfxo0liwh78].[none:팀:nk]</rows>
+        <cols>[federated.0tsu3531p246e01flsfxo0liwh78].[cnt:pid:qk]</cols>
+      </table>
+      <simple-id uuid='{7F0D1ECB-64A3-48DD-814B-D85140CF00B1}' />
+    </worksheet>
+    <worksheet name='[시트1] 실제등급별 오분류 분해'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='투수연봉예측_실패칼럼_0813' name='federated.0tsu3531p246e01flsfxo0liwh78' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0tsu3531p246e01flsfxo0liwh78'>
+            <column-instance column='[pid]' derivation='Count' name='[cnt:pid:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[pred]' derivation='None' name='[none:pred:nk]' pivot='key' type='nominal' />
+            <column-instance column='[true]' derivation='None' name='[none:true:nk]' pivot='key' type='nominal' />
+            <column caption='Pid' datatype='integer' name='[pid]' role='dimension' type='ordinal' />
+            <column caption='Pred' datatype='string' name='[pred]' role='dimension' type='nominal' />
+            <column caption='True' datatype='string' name='[true]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.0tsu3531p246e01flsfxo0liwh78].[cnt:pid:qk]' scope='rows' value='선수 수' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='width' field='[federated.0tsu3531p246e01flsfxo0liwh78].[none:true:nk]' value='91' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <color column='[federated.0tsu3531p246e01flsfxo0liwh78].[none:pred:nk]' />
+              <text column='[federated.0tsu3531p246e01flsfxo0liwh78].[cnt:pid:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0tsu3531p246e01flsfxo0liwh78].[cnt:pid:qk]</rows>
+        <cols>[federated.0tsu3531p246e01flsfxo0liwh78].[none:true:nk]</cols>
+      </table>
+      <simple-id uuid='{44A3B27E-F601-49E7-8A96-16573570600B}' />
+    </worksheet>
+    <worksheet name='시트 8'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='투수연봉예측_실패칼럼_0813' name='federated.0tsu3531p246e01flsfxo0liwh78' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0tsu3531p246e01flsfxo0liwh78'>
+            <column caption='오분류여부' datatype='integer' name='[Calculation_1340665356269961220]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='IIF([true] = [pred], 0, 1)' />
+            </column>
+            <column-instance column='[pred]' derivation='Count' name='[cnt:pred:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[pred]' derivation='None' name='[none:pred:nk]' pivot='key' type='nominal' />
+            <column-instance column='[팀]' derivation='None' name='[none:팀:nk]' pivot='key' type='nominal' />
+            <column caption='Pred' datatype='string' name='[pred]' role='dimension' type='nominal' />
+            <column-instance column='[Calculation_1340665356269961220]' derivation='Sum' name='[sum:Calculation_1340665356269961220:qk]' pivot='key' type='quantitative' />
+            <column caption='True' datatype='string' name='[true]' role='dimension' type='nominal' />
+            <column datatype='string' name='[팀]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='width' field='[federated.0tsu3531p246e01flsfxo0liwh78].[none:팀:nk]' value='55' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <color column='[federated.0tsu3531p246e01flsfxo0liwh78].[none:pred:nk]' />
+              <text column='[federated.0tsu3531p246e01flsfxo0liwh78].[cnt:pred:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0tsu3531p246e01flsfxo0liwh78].[sum:Calculation_1340665356269961220:qk]</rows>
+        <cols>[federated.0tsu3531p246e01flsfxo0liwh78].[none:팀:nk]</cols>
+      </table>
+      <simple-id uuid='{D26983C1-6E43-41EC-AEF2-FE91FF125431}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard enable-sort-zone-taborder='true' name='대시보드 1'>
+      <style />
+      <size sizing-mode='automatic' />
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98110' id='7' param='horz' type-v2='layout-flow' w='98308' x='846' y='945'>
+            <zone h='98110' id='5' type-v2='layout-basic' w='81395' x='846' y='945'>
+              <zone h='24528' id='3' name='[시트1] 실제등급별 오분류 분해' w='81395' x='846' y='945'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='24527' id='9' name='[시트 2]오분류 흐름(실제→예측)' w='81395' x='846' y='25473'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='49055' id='11' name='[시트 3]팀 × 예측등급 히트맵' w='40698' x='846' y='50000'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='49055' id='13' name='[시트 4]실제×예측 히트맵' w='40697' x='41544' y='50000'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+            <zone fixed-size='160' h='98110' id='6' is-fixed='true' param='vert' type-v2='layout-flow' w='16913' x='82241' y='945'>
+              <zone h='12515' id='8' name='[시트1] 실제등급별 오분류 분해' pane-specification-id='0' param='[federated.0tsu3531p246e01flsfxo0liwh78].[none:pred:nk]' type-v2='color' w='16913' x='82241' y='945'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='7793' id='10' name='[시트 2]오분류 흐름(실제→예측)' pane-specification-id='0' param='[federated.0tsu3531p246e01flsfxo0liwh78].[none:Calculation_1686316627418959874:nk]' type-v2='color' w='16913' x='82241' y='13460'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='7675' id='12' name='[시트 3]팀 × 예측등급 히트맵' pane-specification-id='0' param='[federated.0tsu3531p246e01flsfxo0liwh78].[cnt:pid:qk]' type-v2='color' w='16913' x='82241' y='21253'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='1200' minheight='1200' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='19' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='84000' id='18' param='vert' type-v2='layout-flow' w='84000' x='8000' y='8000'>
+                <zone fixed-size='188' h='24528' id='3' is-fixed='true' name='[시트1] 실제등급별 오분류 분해' w='81395' x='846' y='945'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='12515' id='8' name='[시트1] 실제등급별 오분류 분해' pane-specification-id='0' param='[federated.0tsu3531p246e01flsfxo0liwh78].[none:pred:nk]' type-v2='color' w='16913' x='82241' y='945'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='188' h='24527' id='9' is-fixed='true' name='[시트 2]오분류 흐름(실제→예측)' w='81395' x='846' y='25473'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='7793' id='10' name='[시트 2]오분류 흐름(실제→예측)' pane-specification-id='0' param='[federated.0tsu3531p246e01flsfxo0liwh78].[none:Calculation_1686316627418959874:nk]' type-v2='color' w='16913' x='82241' y='13460'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='49055' id='11' is-fixed='true' name='[시트 3]팀 × 예측등급 히트맵' w='40698' x='846' y='50000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='7675' id='12' name='[시트 3]팀 × 예측등급 히트맵' pane-specification-id='0' param='[federated.0tsu3531p246e01flsfxo0liwh78].[cnt:pid:qk]' type-v2='color' w='16913' x='82241' y='21253'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='49055' id='13' is-fixed='true' name='[시트 4]실제×예측 히트맵' w='40697' x='41544' y='50000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{D6FE6CE1-C98C-4EDB-B4E6-97F57EB92B20}' />
+    </dashboard>
+    <dashboard enable-sort-zone-taborder='true' name='대시보드 2'>
+      <style />
+      <size sizing-mode='automatic' />
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='96068' id='7' param='horz' type-v2='layout-flow' w='98004' x='998' y='1966'>
+            <zone h='96068' id='5' type-v2='layout-basic' w='78054' x='998' y='1966'>
+              <zone h='24017' id='3' name='[시트 5]오분류 비용' w='78054' x='998' y='1966'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='40259' id='9' name='[시트 6]연봉 vs 등급차 산점도' w='78054' x='998' y='25983'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='31792' id='10' name='[시트 7]팀별 큰오차 &gt;=2' w='78054' x='998' y='66242'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+            <zone fixed-size='160' h='96068' id='6' is-fixed='true' param='vert' type-v2='layout-flow' w='19950' x='79052' y='1966'>
+              <zone h='16217' id='8' name='[시트 5]오분류 비용' pane-specification-id='2' param='[federated.0tsu3531p246e01flsfxo0liwh78].[none:Calculation_1686316627418959874:nk]' type-v2='color' w='19950' x='79052' y='1966'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='850' minheight='850' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='16' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='84000' id='15' param='vert' type-v2='layout-flow' w='84000' x='8000' y='8000'>
+                <zone fixed-size='184' h='24017' id='3' is-fixed='true' name='[시트 5]오분류 비용' w='78054' x='998' y='1966'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='16217' id='8' name='[시트 5]오분류 비용' pane-specification-id='2' param='[federated.0tsu3531p246e01flsfxo0liwh78].[none:Calculation_1686316627418959874:nk]' type-v2='color' w='19950' x='79052' y='1966'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='40259' id='9' is-fixed='true' name='[시트 6]연봉 vs 등급차 산점도' w='78054' x='998' y='25983'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='246' h='31792' id='10' is-fixed='true' name='[시트 7]팀별 큰오차 &gt;=2' w='78054' x='998' y='66242'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{11014FF6-E7C8-45D8-8655-036C429B5E13}' />
+    </dashboard>
+  </dashboards>
+  <windows source-height='30'>
+    <window class='worksheet' name='[시트1] 실제등급별 오분류 분해'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='100'>
+            <card pane-specification-id='0' param='[federated.0tsu3531p246e01flsfxo0liwh78].[none:pred:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{4E438703-4A0C-405C-90AE-5D9C814DE80D}' />
+    </window>
+    <window class='worksheet' name='[시트 2]오분류 흐름(실제→예측)'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='100'>
+            <card pane-specification-id='0' param='[federated.0tsu3531p246e01flsfxo0liwh78].[none:Calculation_1686316627418959874:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{2A69DC2A-D33F-4EE2-A1D1-B9BCD173E47A}' />
+    </window>
+    <window class='worksheet' name='[시트 3]팀 × 예측등급 히트맵'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0tsu3531p246e01flsfxo0liwh78].[cnt:pid:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{9D9C6536-201C-41E1-9439-F9496F98805F}' />
+    </window>
+    <window class='worksheet' name='[시트 4]실제×예측 히트맵'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{5A39B1E7-DBDA-4AF5-8078-50281F7C4D41}' />
+    </window>
+    <window class='worksheet' name='[시트 5]오분류 비용'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='2' param='[federated.0tsu3531p246e01flsfxo0liwh78].[none:Calculation_1686316627418959874:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{839E8D81-682C-4BEA-8B78-6617FBDAC63F}' />
+    </window>
+    <window class='worksheet' name='[시트 6]연봉 vs 등급차 산점도'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0tsu3531p246e01flsfxo0liwh78].[none:Calculation_1686316627418959874:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{567A8F7D-2BDB-45B3-8DC9-2B4E829D4470}' />
+    </window>
+    <window class='worksheet' name='[시트 7]팀별 큰오차 &gt;=2'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0tsu3531p246e01flsfxo0liwh78].[none:Calculation_1686316627418959874:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{28032C7D-DE31-4E1D-BFEC-C991E80AF37A}' />
+    </window>
+    <window class='dashboard' name='대시보드 1'>
+      <viewpoints>
+        <viewpoint name='[시트 2]오분류 흐름(실제→예측)' />
+        <viewpoint name='[시트 3]팀 × 예측등급 히트맵' />
+        <viewpoint name='[시트 4]실제×예측 히트맵' />
+        <viewpoint name='[시트1] 실제등급별 오분류 분해' />
+      </viewpoints>
+      <active id='-1' />
+      <simple-id uuid='{B57923E8-E424-4FC3-825E-D73D9F00ADEF}' />
+    </window>
+    <window class='dashboard' name='대시보드 2'>
+      <viewpoints>
+        <viewpoint name='[시트 5]오분류 비용' />
+        <viewpoint name='[시트 6]연봉 vs 등급차 산점도'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='[시트 7]팀별 큰오차 &gt;=2' />
+      </viewpoints>
+      <active id='-1' />
+      <simple-id uuid='{CD739F2D-0877-4929-9CB5-0413F89B5A65}' />
+    </window>
+    <window class='worksheet' maximized='true' name='시트 8'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='190'>
+            <card pane-specification-id='0' param='[federated.0tsu3531p246e01flsfxo0liwh78].[none:pred:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0tsu3531p246e01flsfxo0liwh78].[none:pred:nk]</field>
+            <field>[federated.0tsu3531p246e01flsfxo0liwh78].[none:팀:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{62B7D7BC-28A3-48C4-AD81-5F5113021497}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='[시트1] 실제등급별 오분류 분해' width='192'>
+      iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAAACXBIWXMAAA7DAAAOwwHHb6hk
+      AAALOklEQVR4nO3d3U9b9x3H8c/vPNjGxhAIJjwkhCQlgdA22aau7TStW9du2s20u/0NlfYf
+      TLvr+j/scvfTrjZt3UUndZu6ri0EwkMgkJBAeAjGBj8/nHN+u6Bp0qSRTXrsY/v7eUmRYoT4
+      /QR+43NsfL5Ka61BJJBSShlBb4IoSAyARGtqAJ7nNXM5opqaGoDrus1cjqgmHgKRaAyARGMA
+      JBoDINEYAInGAEg0BkCiMQASjQGQaAyARGMAJBoDINEYAInGAEg0K+gNkH/K+/+A1k4AKytE
+      Bn8RwLrfHgPoIPl7fwC8QvMXVmbbBsBDIBKNAZBoDIBEYwAkmj8nwVrD0xoagKEUAMDzNAxD
+      QX15m6gV+RKAWylg7c4GquUcwolJ2Jm72MuW0Td8CRPnBsAEqFX5EoAZjmHs7AgOkptIZ/Mo
+      eGG8/to05mcW4ZwdgKk9aK2htealURoquKtctuvP1bfXATyniqNMBVa3hqMVoExorwpPA8aX
+      lx99FAF1nnb9ufoSQCV/iM3dA5i2gUKxArOYxvLSTTjRQYQMQMEEcHxlOMvia2+NE9zBZrv+
+      XH3Ztd0Vx9iYBdcDumIxKHcEhVIVkWiUx//U0nwJQBkmorHuxx8wwojbYT++NFFD8XUAEo0B
+      kGgMgERjACQaAyDRGACJxgBINAZAojEAEo0BkGgMgERjACQaAyDRGACJxgBINAZAojEAEo0B
+      kGgMgERjACQaAyDRGACJxgBINAZAojEAEo0BkGgMgERjACRae17TOgB77/8ebiodyNpDH7wP
+      IxIJZO1OxwDq5Oztwd1PBrN4mw6faAc8BCLRGACJxgBINAZAovkSgNYameQ2llc34Hgamf0t
+      LCws4N5OKsDBnUS1+fIskFfKIlW2cGnUw/ziJuzyAcZfnkLY5JNM1Nr8GZTd1YORfoWV5Q0M
+      j1/Fg6U13PhiBmcvTmF8uA/VahXA8TDldp0n+5fJCjIj5UDWfs+tIFQx6/jM4L63lUolsLW/
+      DX8eAao5LC3dxtjkNfRFQ0i88RZMw8HMZ0s4O9QH27a/+twn/99OFoc8JOPBTEM3wyGE7FAd
+      n3myobRaa2RyDrpjFlxX4+5WAf29Ngb6QlDqZF8rFKpnf63Hl3OAaj6H1FEKC198itX7+7i3
+      Mo8vZubRMzwKi4OCW5LWGvMrGfzpwx0USy4eHpRhWwqfzKaROqoGvb2m8eURIHxqCG+/PfTV
+      ba0Tx/9RioOyW9j0RBzZvAOtgaFEGB/+ex+e1ohG6jnc6gwNeRpUKXX8rxFfnHyhlIJlPv7x
+      m4bCT98YgGkoHGX5CEAdTmuNm6tZLK3nUK546I3b2NkvIV9yEQnLeQRgAEIppfDqlR68eqUH
+      wHEQjtMD01QwDDmP3QyAABwHYdty7viP8E8hSDQGQKIxABKNAZBoDIBEYwAkGgMg0RgAicYA
+      SDQGQKIxABKNAZBoDIBEYwAkGgMg0RgAicYASDQGQKIxABKNAZBoDIBEYwAkGgMg0RgAicYA
+      SDQGQKIxABKNAZBoDIBEYwAkmk8BaOQPk9i4vwNXa1RLWayt30PZ8fz58kQN4ksAbjGLncMS
+      +uMVLC5vYWX5NnriCku37oMJUCvzZUCGEYnjwtkwbi/MIp64jFwmj8HEOextfo6qNw7Dbf85
+      wUHO4K1WKjA15wQ3gj8TYtwSlm4sIDFxDYNRYC7lQusKHM+GodARc4JPOoPXT3aoMXOC/SR6
+      TnAlm8J2KoXVuc+wtptDn+VgZvYmuofPcU4wtTR/5gT3jeLnPxv96rbWAxjTGsowOCqVWlpD
+      huQ9mhNM1Or4OgCJxgBINAZAogU+KNurHsLJ3gxkbSM0AKt7KpC1qTUEHoBb3EBu7YNA1rb7
+      foj4xG8DWZtaAw+BSDQGQKIxABKNAZBoDIBEYwAkWuBPg5J/DooxeE7zf6cpw0R/01f1BwPo
+      IL/76Jcolp2mr2saCn9+q+nL+oKHQCQaAyDR6gxAY3VxHrMLi43dDVGT1QzAc6pIbtxAqtKN
+      YiGPUrkCr23f2E70dTUDyKUf4MP/rGHy0gCS2xtYvLWGisMAqDPUfBaoJzGOX/8qik/n1nBm
+      7DK+d+1qM/ZF1BR1PQ1qxQYxNaGRDeApNqJGqvt1gP7EmbZ9sYNaR2Hzjyjv/zWQtaPnf4Pw
+      6R997WN1B+C5LhzPQ6htL2xFrUB7JWgnG9Di1Wc+VOfToA5uzsxgbnHJ5x0RBatmANVSHquz
+      n0D1jKCQyyB1eATX47NA1BlqBqBMC7FYFI5bhWnZCNk2eM0r6hQ1A7DsMEYvfxdR9xCRrhi6
+      Y1EYLIA6RJ0nwQqTr1wHgC8vb674KEAdoWYAe+vz+Ph/i1DhMOL95zF9sRvdg1dwKtKM7RE1
+      Vs0Azlx6FW+WTNijA1DoQXZzBmb/FZxqxu6IGqzmOUAxs4+MW8L83B1Eu9pzCALR89QMIBTt
+      xWBfDF6piI3VOdxYTyHM95FRh6h5VzatEAbOTeLdoQt4mM7g6vR1ngBTx6j7d7lhhzE0mGjk
+      Xoiazre3RGrPQaFYhgZQyh1id3cX6UwhwLmFRLX5E4BTxq2lWcwv3wfg4u7KGkquC8/jlGBq
+      bf6czpo2Ll+dxvLCNuC5SKb3YTrAxNRpKADV6vPnBLvV4N5joLU+wXzbdpgTHJx6v4+e5zZ4
+      J8/nOC7UU/v0JwBlwHx0Zqxs/ODH70J7ZczduIVTr12HZT1e5sn/A4CygntKSSl1grnFAc4J
+      tu2Wn69c7/6qRnAhW5b5zD59ufd5lQLW79zGzl4a8YFelA/uI1f1YMQSMBWgnrjzPDM9MuBn
+      lBo1zbI3cgpjfeM4yO9jN7uDkd5RZIpHyJQzJ/9ibTB1s9H7cxwPB4dVWJZCX48Nw3ix9Z7e
+      py8BGKEoJiavYWLy+LYeHoDrejAtM+j7d2DCVhgrD5dxbeQ7KDtlDMVHYCjzxQIgLK3nsLVb
+      xPBgBL1xC35NoG7YnGDLau1j1kY7yCcxNfQyDktpHBSSUEohGooFva22tbVbhOtqxKMWzBf8
+      7f9N+Jpug0yemUYqn8R25kHQW+kIb33/NNKZKuZvZdDXa+P0KX/+LIcBNEjICmFq6GWM9Y9j
+      ff82xvovwIBCunCAbDmg98S2sdW7eWzuFnGUraIr7N/RBQNokNmtz792ez//MKCddIbrUz24
+      +lI3bMt44RPgb8IAqC0opRAO+X9eyatDk2gMgERjACQaAyDRGACJxgBINAZAojEAEo0BkGgM
+      gERjACQaAyDRGACJxgBINAZAovH9ANRUDysK27lgLpUw4SgMPvUxBkBN9a9DE3/fCuYy+++d
+      N54JgIdAJBoDINEYAInGAEg0BkCiMQASjQGQaAyARGvLF8I8TyNXcBCLWtjaLaJc8RAJmRgb
+      6Qp6a9Rm2u4RwPM0/vbxQ3z03ySggaqjUSp7+OenyaC3Rm2o7QJQCvjJ6wOIxyyYpsJLYzG4
+      rsYb1/uC3hq1oTYMQMGyHv8xleNqbDwoYOI8h0/QybXdOYDjanz8+QFW7uQwnIggZBuYvNjt
+      6yWzSQ5/AtAeUvsPkC6FcfFcAkd797G+ncbYpStI9Pp7YmqZCu+8mcA7b3JqPX17/hwCuRUU
+      HQeHB4eAW8HG7hFemb6ErTsbcDkqnlqYP48AVgSjI0NIJx/Acz1YkQhC4W6YbgaOBjzn+YOy
+      nUAHZXsclO2Tugdlu8ENynZd55l9+hKA1hqu6xzfwRVQyhdQLh2ionpgKcB8Yjjx04OKlW2h
+      5McmXoBSBkKhet+cEeCg7FAIITuYN5HUq97vo2EGF7JpWs/s05dDIO2UsLmxDWVUsHdUxsS5
+      ftxafYDxyxdg8tyUWtj/AbGre21IzeseAAAAAElFTkSuQmCC
+    </thumbnail>
+    <thumbnail height='192' name='시트 8' width='192'>
+      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
+      YII=
+    </thumbnail>
+  </thumbnails>
+</workbook>
